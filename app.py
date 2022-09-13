@@ -1,6 +1,6 @@
-import flask
+from flask import Flask
 
-app = flask(__name__) #__name__是python內建的一個變數, 會儲存目前這個程式在哪個模組下進行執行
+app = Flask(__name__) #__name__是python內建的一個變數, 會儲存目前這個程式在哪個模組下進行執行
 		      #如果這個程式是被當成主程式被執行的話__name__ = __main__
 @app.route("/")	#函式的裝飾
 def home():
