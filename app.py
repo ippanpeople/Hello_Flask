@@ -7,6 +7,7 @@ app = Flask(__name__) #__name__是python內建的一個變數, 會儲存目前�
 def home():
 	return "Hello Flask"
 @app.route(/test)
+def test():
     return "test"
 
 if __name__ == "__main__" : #如果把app.py當成主程式來運作
